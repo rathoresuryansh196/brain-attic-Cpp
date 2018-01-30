@@ -37,7 +37,7 @@ template<typename T>
 void LinkedList<T>::imprimir() {
     Node<T> *current;
     current = header;
-    while(atual != nullptr) {
+    while(current != nullptr) {
         std::cout << current->data << '\n';
         current = current->next;
     }
