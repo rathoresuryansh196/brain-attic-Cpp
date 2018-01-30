@@ -18,7 +18,7 @@ template <typename T>
 class LinkedList {
     
 public:
-    Node<T> *header;
+    Node<T> *header = nullptr;
     void addNode(T data);
     void imprimir();
 };
