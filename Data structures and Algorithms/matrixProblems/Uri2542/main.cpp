@@ -5,12 +5,15 @@ using namespace std;
 int main() {
     //M= Marcos e L = Leonardo
     int numDeAtributos;
-    while( scanf("%d",&numDeAtributos) != EOF ){
+    while(true) {
         numDeAtributos = 0;
         int numCartasM = 0,numCartasL = 0;
         int cartaEscolhidaM = 0,cartaEscolhidaL = 0,atributoSorteado = 0;
-        cin >> numDeAtributos
-            >> numCartasM >> numCartasL;
+        cin >> numDeAtributos;
+        if(cin.eof()){
+            break;
+        }
+        cin >> numCartasM >> numCartasL;
         int** cartasDeM;
         int** cartasDeL;
         cartasDeM = new int*[numCartasM];
