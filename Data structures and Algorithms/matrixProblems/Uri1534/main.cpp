@@ -30,11 +30,9 @@ int main() {
             }
             cout << '\n';
         }
-        for(short i = 0; i < ordemDaMatrix; i++) {
+        
+        for(short i = 0; i < ordemDaMatrix; i++)
             delete [] matrix123[i];
-            matrix123[i] = nullptr;
-        }
         delete [] matrix123;
-        matrix123 = nullptr;
     }
 }
